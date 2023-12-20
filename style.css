@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    background-color: rgb(0, 255, 255);
+    border-radius: 10px;
+    height: 0px;
+    width: 7px;
+}
+body{
+    flex-wrap: wrap;
+    width: 400vh;
+    height: 100vh;
+    background-color: rgb(16, 16, 41);
+    animation: led 7s linear infinite;
+}
+.container{
+    width: 200vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 16, 41);
+    animation: led 7s linear infinite;
+    
+}
+h1{
+    scale: 3;
+    background-color: rgb(24, 24, 59);
+    color: azure;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px 0px  rgb(41, 13, 167);
+    width: 50%;
+}
+#historia{
+    color: azure;
+    font-size: 35px;
+    font-family: monospace;
+    text-align: justify;
+    padding: 10px;
+}
+#comecarHistoria{
+    margin-right: 20px;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 5px;
+    color: azure;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+@keyframes led{
+    0%{
+        background-color: rgb(16, 16, 41);
+    }
+    50%{
+        background-color: rgb(8, 10, 22);
+    }
+    100%{
+        background-color: rgb(16, 16, 41);
+    }
+    
+}
